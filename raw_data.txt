@@ -1,0 +1,5 @@
+ITEM: Premium Leather Wallet | COST: 45.00 USD | AVAILABILITY: In Stock
+ITEM: Ergonomic Office Chair | COST: 189.99 USD | AVAILABILITY: Out of Stock
+ITEM: Stainless Steel Water Bottle | COST: 24.50 USD | AVAILABILITY: In Stock
+ITEM: Bluetooth Pocket Speaker | COST: 35.00 USD | AVAILABILITY: In Stock
+ITEM: Minimalist Desk Desk Mat | COST: 15.99 USD | AVAILABILITY: Out of Stock

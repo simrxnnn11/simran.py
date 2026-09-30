@@ -1,0 +1,39 @@
+import pandas as pd
+
+# 1. Messy data sent by the client
+raw_products = [
+    {"name": "Vintage Leather Backpack", "price": 79.99, "brand": "UrbanGlow"},
+    {"name": "Minimalist Quartz Watch", "price": 120.00, "brand": "TimePiece"},
+    {"name": "Waterproof Bluetooth Earbuds", "price": 45.50, "brand": "SonicWave"}
+]
+
+handles = []
+titles = []
+prices = []
+vendors = []
+
+# 2. Process data into Shopify's format standard
+for item in raw_products:
+    # Shopify needs a 'Handle' which is lowercase with dashes instead of spaces
+    handle = item["name"].lower().replace(" ", "-")
+    
+    handles.append(handle)
+    titles.append(item["name"])
+    prices.append(item["price"])
+    vendors.append(item["brand"])
+
+# 3. Create the exact column names Shopify looks for
+shopify_template = {
+    "Handle": handles,
+    "Title": titles,
+    "Vendor": vendors,
+    "Variant Price": prices,
+    "Variant Inventory Tracker": ["shopify"] * len(raw_products),  # Tells Shopify to track stock
+    "Variant Image": [""] * len(raw_products)                     # Placeholder for image link
+}
+
+# 4. Save directly as a CSV file (Shopify only accepts .csv)
+df = pd.DataFrame(shopify_template)
+df.to_csv("shopify_import_ready.csv", index=False)
+
+print("🚀 Success! 'shopify_import_ready.csv' is ready to upload directly to Shopify.")

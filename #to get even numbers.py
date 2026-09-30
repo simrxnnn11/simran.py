@@ -1,5 +1,5 @@
 #to get even numbers
-start=1
+star
 while(start<=10):
     if(start%2==0):
         print(start)

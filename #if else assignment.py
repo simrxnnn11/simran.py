@@ -1,15 +1,14 @@
 # TO GET EVEN AND ODD NUMBERS
- #start=1
+#start=1
 #while(start<=10):
- #   if(start%2==0):
-  #      print(start)
-   #     start+=1
-
+#   if(start%2==0):
+#      print(start)
+#     start+=1
 # odd numbers
 #start=1
- #while(start<=15):
-   ##   print(start)
-     #  start+=1
+#while(start<=15):
+##   print(start)
+ #  start+=1
 
 
 # STUDENT GRADES
@@ -65,8 +64,9 @@
 # POSITIVE , NEGATIVE OR ZERO
 #number=int(input("enter the number= "))
 #if number>0:
-#   print("it is a positive number")
-##   print("it is a negative number")
+#   print("it is a positive number")'
+#elif number<0:
+#   print("it is a negative number")
 #elif number==0:
 #   print("it is a zero")
 #else:
@@ -84,15 +84,15 @@
 
 
 # BILL CALCULATOR
-#unit=int(input("enter the number of units consumed= "))
-#if unit>=0 and unit<=100:
-#    print("bill amount= unit*5")
-#elif unit>=101 and unit<=300:
-#    print("bill amount= unit*8")
-#elif unit>=300:
-#    print("bill amount = ", "unit*10")
-#else: 
-#print("error")
+# unit=int(input("enter the number of units consumed= "))
+# if unit>=0 and unit<=100:
+#    print("bill amount=", unit*5)
+# elif unit>=101 and unit<=300:
+#    print("bill amount=", unit*8)
+# elif unit>=300:
+#    print("bill amount = ", unit*10)
+# else: 
+#    print("error")
 
 
 #CHECK THE NUMBER IS IN RANGE OR NOT
@@ -105,14 +105,24 @@
 
 
 #TRIANGLE TYPE CHECKER
-side1=int(input("enter the length of side1= "))
-side2=int(input("enter the length od side2= "))
-side3=int(input("enter the length of side3= "))
-if side1==side2==side3:
-    print("it is an equlaterlal tiangle")
-elif side1==side2 and side1!=side3:
-    print("it is an isosceles triangle")
-elif side1!=side2!=side3:
-    print("it is an scalene triangle")
-else:
-    print("error")
+#side1=int(input("enter the length of side1= "))
+#side2=int(input("enter the length od side2= "))
+#side3=int(input("enter the length of side3= "))
+#if side1==side2==side3:
+#    print("it is an equlaterlal tiangle")
+#elif side1==side2 and side1!=side3:
+#    print("it is an isosceles triangle")
+#elif side1!=side2!=side3:
+#    print("it is an scalene triangle")
+#else:
+#    print("error")
+
+
+
+# a =int(input("enter the number= "))
+
+
+# if(a%2==0):
+#    print("it is an even number")
+# else:
+#    print("it is an odd number")
